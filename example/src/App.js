@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import ExampleComponent from 'sierra-library-react'
+import { Test } from 'sierra-library-react';
 
 export default class App extends Component {
-  render () {
+  render() {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <Test text="Modern React component module" />
       </div>
-    )
+    );
   }
 }
