@@ -21,7 +21,7 @@
     "predeploy": "npm run lndev && npm run build:storybook",
     "deploy": "gh-pages -d /storybook",
     "storybook": "npm run lndev && start-storybook -p 9009",
-    "build:storybook": "npm run lndev && build-storybook",
+    "build:storybook": "npm run lndev && build-storybook -o ./build/",
     "lndev": "node LNDev.js"
   },
   "peerDependencies": {
