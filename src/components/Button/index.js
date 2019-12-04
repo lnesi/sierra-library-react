@@ -11,25 +11,28 @@ type ButtonType =
   | 'transparent';
 
 type ButtonSize = 'big' | 'small';
+type HtmlButtonType = 'button' | 'submit';
 
 export type ButtonProps = {
   mobileFull: Boolean,
   label: String,
   size: ButtonSize,
-  type: ButtonType
+  type: ButtonType,
+  htmlType: HtmlButtonType
 };
 
 export default function Button(props: ButtonProps): React.ReactNode {
-  const { type, label, size, mobileFull } = props;
+  const { type, label, size, mobileFull, htmlType } = props;
   const sizeClassName = size ? 'button--' + size : '';
   const typeClassName = type ? 'button--' + type : '';
   const mobileFullClassName = mobileFull ? 'button--mobileFull' : '';
   return (
-    <div
+    <button
+      type={htmlType}
       className={`button  ${typeClassName} ${sizeClassName} ${mobileFullClassName}`}
     >
       {label}
-    </div>
+    </button>
   );
 }
 
@@ -44,5 +47,6 @@ Button.propTypes = {
     'red',
     'outlined',
     'transparent'
-  ])
+  ]),
+  htmlType: PropTypes.oneOf(['button', 'submit'])
 };
