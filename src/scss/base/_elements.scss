@@ -46,3 +46,14 @@ p {
   margin: $m-small 0;
   font-weight: $fw-normal;
 }
+
+small {
+  font-size: $fz-small;
+  line-height: $lh-small;
+  margin: $m-small 0;
+  font-weight: $fw-normal;
+}
+
+li {
+  list-style: inside;
+}
