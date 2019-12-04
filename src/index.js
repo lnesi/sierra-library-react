@@ -1,3 +1,1 @@
-import Test from './components/Test';
-
-export default { Test };
+export { default as Test } from './components/Test';
