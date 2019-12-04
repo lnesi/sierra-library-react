@@ -70,6 +70,7 @@
     "rollup-plugin-url": "^1.4.0",
     "sass-loader": "^8.0.0",
     "sierra-library": "^3.5.0",
+    "storybook": "^5.1.11",
     "webpack": "^4.41.2"
   },
   "files": [

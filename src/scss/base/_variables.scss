@@ -256,3 +256,23 @@ $lh-tag: 16px !default;
 $m-tag: 0 $m-medium $m-medium 0 !default;
 $p-tag: $p-medium !default;
 $size-tag-dot: 5px !default;
+
+:export {
+  ffBase: $ff-base;
+  fwBase: $fw-base;
+  fwBold: $fw-bold;
+  fwNormal: $fw-normal;
+  fwLight: $fw-light;
+  fzHuge: $fz-huge;
+  lhHuge: $lh-huge;
+  fzBig: $fz-big;
+  lhBig: $lh-big;
+  fzMedium: $fz-medium;
+  lhMedium: $lh-medium;
+  fzSmall: $fz-small;
+  lhSmall: $lh-small;
+  lhBase: $lh-base;
+  fzBase: $fz-base;
+  lhBody: $lh-body;
+  fzBody: $fz-body;
+}
